@@ -1,4 +1,9 @@
 @import "tailwindcss";
- @plugin "daisyui" {
-   themes: light --default, dark --prefersdark;
- }
+/* @plugin "daisyui" {
+   themes: dark --default, dracula --prefersdark;
+ } */
+
+/* This example shows how to set both light and dracula themes, with dracula as the default */
+@plugin "daisyui" {
+  themes: "light", "dracula" --default;
+}
